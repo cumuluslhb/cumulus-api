@@ -9,10 +9,10 @@
         <version>2.7.15</version> <!-- 兼容JDK 1.8的最新稳定版本 -->
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example</groupId>
-    <artifactId>demo</artifactId>
+    <groupId>com.cumulus</groupId>
+    <artifactId>cumulus</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo</name>
+    <name>cumulus</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>1.8</java.version>

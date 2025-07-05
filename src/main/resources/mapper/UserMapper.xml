@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.example.demo.mapper.UserMapper">
-    
-    <resultMap id="BaseResultMap" type="com.example.demo.entity.User">
+<mapper namespace="com.cumulus.cumulus.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.cumulus.cumulus.entity.User">
         <id column="id" property="id" jdbcType="BIGINT"/>
         <result column="username" property="username" jdbcType="VARCHAR"/>
         <result column="password" property="password" jdbcType="VARCHAR"/>
@@ -20,12 +20,12 @@
         SELECT * FROM user WHERE id = #{id}
     </select>
     
-    <insert id="insert" parameterType="com.example.demo.entity.User">
+    <insert id="insert" parameterType="com.cumulus.cumulus.entity.User">
         INSERT INTO user(username, password, age, email, create_time, update_time)
         VALUES (#{username}, #{password}, #{age}, #{email}, now(), now())
     </insert>
     
-    <update id="update" parameterType="com.example.demo.entity.User">
+    <update id="update" parameterType="com.cumulus.cumulus.entity.User">
         UPDATE user
         SET username = #{username},
             password = #{password},
