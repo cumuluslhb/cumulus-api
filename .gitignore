@@ -1,0 +1,14 @@
+# Maven generated files
+target/
+
+# IDE-specific files
+.idea/
+*.iml
+*.iws
+
+# Log files
+logs/
+*.log
+
+# Environment-specific files
+.env
